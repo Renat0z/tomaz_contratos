@@ -1,0 +1,11 @@
+PyPDF2>=3.0.0
+pandas
+openpyxl
+langchain_openai  # Ajuste conforme necessário
+langchain_core  # Ajuste conforme necessário
+regex
+streamlit
+pandas
+matplotlib
+zipfile36
+python-dotenv
