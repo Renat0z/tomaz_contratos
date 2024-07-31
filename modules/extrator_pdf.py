@@ -8,7 +8,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 
 from openai import OpenAI
-client = OpenAI()
+# client = OpenAI()
 
 # Carregar variáveis de ambiente do arquivo .env
 load_dotenv()
