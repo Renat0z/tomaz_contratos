@@ -4,11 +4,11 @@ import re
 import PyPDF2
 import streamlit as st
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage
-
 from openai import OpenAI
-client = OpenAI()
+
+
+###
+### CHAVES DE API
 
 # Carregar variáveis de ambiente do arquivo .env
 load_dotenv()
@@ -25,14 +25,7 @@ client = OpenAI()
 JSON_DIR = "jsons"
 CONTRACTS_DIR = "contratos"
 
-# Configuração da chave da API OpenAI a partir das variáveis de ambiente
-openai_api_key = os.getenv('OPENAI_API_KEY')
-
-# Criar a instância do modelo
-llm = ChatOpenAI(
-    model="gpt-4o-mini",
-    openai_api_key=openai_api_key  # Adicione a chave da API aqui
-)
+# CRIAR DIRETÓRIOS jsons e contratos
 
 def create_directories():       
     if not os.path.exists(JSON_DIR):
@@ -55,17 +48,20 @@ def extract_text_from_pdf(pdf_path):
 # EXTRAIR DADOS DO TEXTO COM O CHATGPT PARA FORMATO JSON
 
 def json_chat(prompt):
+    # msg de log para o usuário
     st.info("Extraindo as informações com o chatgpt (aguarde...)")
+    
+    # Enviar a solicitação para a API do ChatGPT (retona um JSON)    
     system_message = "Você é um assistente útil projetado para gerar JSON."
-    response = client.Completion.create(
+    response = client.chat.completions.create(
         model="gpt-4o-mini",
-        prompt=prompt,
-        max_tokens=1500,
-        n=1,
-        stop=None,
-        temperature=0.5
-    )
-    return response.choices[0].text.strip()
+        response_format={ "type": "json_object" },
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": prompt}
+        ]
+        )
+    return response.choices[0].message.content
 
 
 ### PROMPT GPT PARA EXTRAIR DADOS DE UM TEXTO PARA JSON
@@ -125,4 +121,5 @@ def extract_data_from_pdf(file_path):
         st.success(f"Dados do PDF {os.path.basename(file_path)} extraídos e salvos como JSON.")
     else:
         st.error(f"Falha ao extrair dados do PDF {os.path.basename(file_path)}.")
+
 
