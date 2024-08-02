@@ -1,0 +1,102 @@
+
+START
+  "Instrumento_Compra_Venda": START
+    "Unidade": "F3",
+    "Empreendimento": "Colinas do Parahyba",
+    "Promitente_Vendedora": START
+      "Nome": "VECE INCORPORADORA LTDA",
+      "CNPJ": "08.979.115/0001-81",
+      "Endereco": "Avenida Alfredo Ignácio Nogueira Penido, 255, Sala 1402, Parque Residencial Aquarius, São José dos Campos, SP, 12246-000",          
+      "Registro_JUCESP": START
+        "Numero": "35221473300",
+        "Data_Sessao": "17/07/2007"
+      END,
+      "Representacao": "Representada nos termos de seu contrato social por seus procuradores."
+    END,
+    "Promitente_Comprador": START
+      "Nome": "JAMES ANDERSON MORAES",
+      "Data_Nascimento": "02/02/1979",
+      "Nacionalidade": "Brasileira",
+      "Profissao": "Funcionário(a) Público(a) Estadual",
+      "RG": "32630003-X SSP/SP",
+      "CPF": "215.023.498-09",
+      "Estado_Civil": "Casado(a)",
+      "Data_Casamento": "24/01/2009",
+      "Regime": "Comunhão Parcial de Bens após a Lei 6.515/77",
+      "Telefone": "(12) 991624741",
+      "Email": "jamesmoraes79@hotmail.com",
+      "Endereço": "Rodovia Alvaro Barbosa de Lima Neto, 2530, Rua 3n.75, Guedes, Tremembé, SP, 12.125-800"
+    END,
+    "Terreno": START
+      "Descricao": "Uma gleba de terras, sem benfeitorias",
+      "Area": "84.848,21 metros quadrados",
+      "Localizacao": "Avenida Agostinho Manfredini, Guedes, Tremembé, SP",
+      "Registro_do_Imovel": "Matrícula nº 8.189, no Oficial de Registro de Imóveis da Comarca de Tremembé-SP",
+      "Cadastro_Prefeitura": "Inscrição Imobiliária nº 0119.0137"
+    END,
+    "Loteamento": START
+      "Nome": "Colinas do Parahyba",
+      "Gleba": "Descrita na cláusula 1ª do Instrumento Particular de Compromisso de Compra e Venda, e Outras Avenças",
+      "Registro": "Número R.04, Matrícula 8.189, Livro 2, Oficial de Registro de Imóveis de Tremembé",
+      "Data_Aprovacao_Prefeitura": "22 de fevereiro de 2023", 
+      "Processo_Numero": "1909/2022",
+      "Data_Aprovacao_GRAPROHAB": "30 de novembro de 2021",
+      "Certificado_Numero_GRAPROHAB": "372/2018",
+      "Status": "Livre e desembaraçado de servidões ativas ou passivas, dúvidas ou responsabilidades, impostos e taxas de quaisquer natureza.",
+      "Prazo_Conclusao": "21/02/2025",
+      "Lotes_Quadra_G": "Lotes 01 ao 03",
+      "Lotes_Quadra_B": "Lotes 02 ao 23",
+      "Hipoteca": "Prefeitura de Tremembé",
+      "Numero_Registro_Hipoteca": "R. 05",
+      "Matricula_Registro_Hipoteca": "8.189",
+      "Livro_Registro_Hipoteca": "02",
+      "Registro_Hipoteca": "Oficial de Registro de Imóveis de Tremembé-SP"
+    END,
+    "Unidade_Lote_Terreno": START
+      "Quadra": "F",
+      "Lote": "03",
+      "Frente_Descricao": "Para a Rua 04",
+      "Frente_Comprimento": "10,00m",
+      "Lado_Direito_Descricao": "Quem da Rua 04 o terreno olha",
+      "Lado_Direito_Comprimento": "25,00m",
+      "Lado_Direito_Confrontante": "Lote 02",
+      "Lado_Esquerdo_Comprimento": "25,00m",
+      "Lado_Esquerdo_Confrontante": "Lote 04",
+      "Fundos_Comprimento": "10,00m",
+      "Fundos_Confrontante": "Lote 42",
+      "Area_Total": "250,00m²",
+      "Matricula_Registro_Imoveis": "12901"
+    END,
+    "Condicoes_Venda_Pagamento": START
+      "Preco_Imovel": "R$ 130.276,95",
+      "Parcela_Sinal_Valor_Total": "R$ 12.196,14",
+      "Parcela_Sinal_Valor_Parcela": "R$ 12.196,14",
+      "Parcela_Sinal_Vencimento": "15/09/2023",
+      "Parcela_Sinal_Forma_Pagamento": "Boleto bancário",
+      "Parcelas_Mensais_1_Valor_Total": "R$ 7.347,56",
+      "Parcelas_Mensais_1_Quantidade_Parcelas": 4,
+      "Parcelas_Mensais_1_Valor_Parcela": "R$ 1.836,89",
+      "Parcelas_Mensais_1_Vencimento_Inicial": "15/10/2023",
+      "Parcelas_Mensais_1_Forma_Pagamento": "Boleto bancário",
+      "Parcelas_Mensais_2_Valor_Total": "R$ 110.733,25",
+      "Parcelas_Mensais_2_Quantidade_Parcelas": 56,
+      "Parcelas_Mensais_2_Valor_Parcela": "R$ 1.977,38",
+      "Parcelas_Mensais_2_Vencimento_Inicial": "15/02/2024",
+      "Parcelas_Mensais_2_Forma_Pagamento": "Boleto bancário",
+      "Reajuste_Prestacoes_Indice": "IPCA do IBGE",
+      "Reajuste_Prestacoes_Periodicidade": "Mensal e cumulativamente",
+      "Reajuste_Prestacoes_Variacao_Positiva_Indice_Aplicado": "Índice de 2 meses anteriores ao mês de vencimento",
+      "Reajuste_Prestacoes_Variacao_Negativa_Indice_Aplicado": "0",
+      "Juros_Taxa": "0,95% a.m.",
+      "Juros_Metodo": "Tabela Price"
+    END,
+    "Mora_Rescisao": START
+      "Impontualidade": "No pagamento de qualquer das prestações referidas em Condicoes de Venda e Pagamento.",
+      "Penalidade_Atualizacao_Descricao": "Pro rata die no período entre a data de vencimento e a data do pagamento efetivo, com base no sistema de reajuste e correção estabelecido.",
+      "Penalidade_Taxa_Condicao": "juros de 1% (um por cento) ao mês e multa de 2% (dois por cento) sobre o valor das prestações em atraso",
+      "Penalidade_Multa_Condicao": "só será exigível nos casos de intervenção judicial ou de mora superior a 03 (três) meses",
+      "Condicao_Negociacao": "Caso o COMPRADOR negocie com a VENDEDORA o preço do imóvel na forma de pagamento como parcelas fixas e/ou reajuste apenas pelo adicional da inflação mensal",
+      "Condicao_Negociacao_Alteracao_Multa": "Altera-se a multa de 2% para 10%"
+    END
+  END
+END
