@@ -4,9 +4,9 @@ START
     "Unidade": "F3",
     "Empreendimento": "Colinas do Parahyba",
     "Promitente_Vendedora": START
-      "Nome": "VECE INCORPORADORA LTDA",
-      "CNPJ": "08.979.115/0001-81",
-      "Endereco": "Avenida Alfredo Ignácio Nogueira Penido, 255, Sala 1402, Parque Residencial Aquarius, São José dos Campos, SP, 12246-000",          
+      "Nome_Vendedora": "VECE INCORPORADORA LTDA",
+      "CNPJ_Vendedora": "08.979.115/0001-81",
+      "Endereco_Vendedora": "Avenida Alfredo Ignácio Nogueira Penido, 255, Sala 1402, Parque Residencial Aquarius, São José dos Campos, SP, 12246-000",          
       "Registro_JUCESP": START
         "Numero": "35221473300",
         "Data_Sessao": "17/07/2007"
@@ -14,12 +14,12 @@ START
       "Representacao": "Representada nos termos de seu contrato social por seus procuradores."
     END,
     "Promitente_Comprador": START
-      "Nome": "JAMES ANDERSON MORAES",
+      "Nome_Comprador": "JAMES ANDERSON MORAES",
       "Data_Nascimento": "02/02/1979",
       "Nacionalidade": "Brasileira",
       "Profissao": "Funcionário(a) Público(a) Estadual",
       "RG": "32630003-X SSP/SP",
-      "CPF": "215.023.498-09",
+      "CPF/CNPJ": "215.023.498-09",
       "Estado_Civil": "Casado(a)",
       "Data_Casamento": "24/01/2009",
       "Regime": "Comunhão Parcial de Bens após a Lei 6.515/77",

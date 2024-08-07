@@ -5,6 +5,8 @@ import PyPDF2
 import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
+from modules.json_to_dataframe import json_to_csv  # Import the function
+
 
 
 ###
@@ -79,6 +81,14 @@ def prompt_contrato_to_json(text):
     
     # Prompt para extrair dados de um contrato em JSON
     prompt_contrato_to_json = f"""
+    Escreva um JSON com os dados do contrato abaixo, exatamente como no exemplo em <modelo>. 
+    O nome das chaves são os headers de uma planilha, por isso as chaves devem ser exatamente como no modelo.
+    
+    Eu odeio pessoas que alteram as chaves do JSON. Não faça isso.
+    Não acrescente nem diminua o número de chaves do JSON. Não faça isso.
+    Não altere o tipo de dado de cada chave. Não faça isso.
+    Não altere a ordem das chaves. Não faça isso.
+    
     <contrato>
     {text}
     </contrato>
@@ -115,10 +125,14 @@ def extract_data_from_pdf(file_path):
             st.error(f"Erro ao decodificar JSON: {e}")
             return
         
+        # Save JSON data to a file
         json_path = os.path.join(JSON_DIR, os.path.basename(file_path).replace(".pdf", ".json"))
         with open(json_path, "w") as json_file:
-            json.dump(json_data, json_file)
+            json.dump(json_data, json_file)           
         st.success(f"Dados do PDF {os.path.basename(file_path)} extraídos e salvos como JSON.")
+        
+        # Convert JSON to CSV using the json_path
+        json_to_csv(json_path)
     else:
         st.error(f"Falha ao extrair dados do PDF {os.path.basename(file_path)}.")
 
